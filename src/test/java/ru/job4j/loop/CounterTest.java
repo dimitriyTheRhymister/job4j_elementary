@@ -6,7 +6,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CounterTest {
 
     @Test
-    void sum() {
+    public void whenSumNumbersFromOneToTenThenFiftyFive() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sum(start, finish);
+        int expected = 55;
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test

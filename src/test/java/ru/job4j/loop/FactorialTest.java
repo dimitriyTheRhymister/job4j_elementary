@@ -19,4 +19,12 @@ public class FactorialTest {
         int out = Factorial.calc(n);
         assertThat(out).isEqualTo(expected);
     }
+
+    @Test
+    public void whenCalculateFactorialForOneThenOne() {
+        int expected = 1;
+        int n = 1;
+        int out = Factorial.calc(n);
+        assertThat(out).isEqualTo(expected);
+    }
 }

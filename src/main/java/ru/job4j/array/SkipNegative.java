@@ -4,8 +4,7 @@ public class SkipNegative {
     public static int[][] skip(int[][] array) {
         for (int r = 0; r < array.length; r++) {
             for (int c = 0; c < array[r].length; c++) {
-                int val = array[r][c];
-                if (val < 0) {
+                if (array[r][c] < 0) {
                     array[r][c] = 0;
                 }
             }

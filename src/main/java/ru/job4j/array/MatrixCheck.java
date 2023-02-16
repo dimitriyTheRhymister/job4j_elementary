@@ -4,8 +4,7 @@ public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
         for (int i = 0; i < board[row].length; i++) {
-            char c = 'X';
-            if (board[row][i] != c) {
+            if (board[row][i] != 'X') {
                 result = false;
                 break;
             }
@@ -16,8 +15,7 @@ public class MatrixCheck {
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (char[] chars : board) {
-            char c = 'X';
-            if (chars[column] != c) {
+            if (chars[column] != 'X') {
                 result = false;
                 break;
             }

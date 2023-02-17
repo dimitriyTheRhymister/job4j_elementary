@@ -43,11 +43,4 @@ public class JavaNameValidator {
             return false;
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(isNameValid(""));
-        System.out.println(isNameValid("A$F8_d"));
-        System.out.println(isNameValid("a$F8_d"));
-        System.out.println(isNameValid("123"));
-    }
 }

@@ -6,9 +6,8 @@ public class Defragment {
             if (array[i] == null) {
                 for (int j = i + 1; j < array.length; j++) {
                     if (array[j] != null) {
-                        String temp = array[j];
-                        array[j] = array[i];
-                        array[i] = temp;
+                        array[i] = array[j];
+                        array[j] = null;
                         break;
                     }
                 }
@@ -21,8 +20,8 @@ public class Defragment {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);
         System.out.println();
-        for (int index = 0; index < compressed.length; index++) {
-            System.out.print(compressed[index] + " ");
+        for (String s : compressed) {
+            System.out.print(s + " ");
         }
     }
 }

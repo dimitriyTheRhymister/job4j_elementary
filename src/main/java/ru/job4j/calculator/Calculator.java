@@ -1,7 +1,6 @@
 package ru.job4j.calculator;
 
 public class Calculator {
-
     public static void plus(int first, int second) {
         int result = first + second;
         System.out.println(result);
@@ -18,5 +17,4 @@ public class Calculator {
         minus(7, 3);
         minus(2, 6);
     }
-
 }

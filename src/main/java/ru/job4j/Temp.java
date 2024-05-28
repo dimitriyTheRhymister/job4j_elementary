@@ -17,7 +17,6 @@ public class Temp {
         biCon.accept(5, "five");
         biCon.accept(6, "six");
         biCon.accept(7, "seven");
-//        System.out.println(map);
 
         BiPredicate<Integer, String> biPred = (i, s) -> i % 2 == 0 || map.get(i).length() == 4;
         for (Integer i : map.keySet()) {
@@ -28,7 +27,6 @@ public class Temp {
 
         Supplier<List<String>> sup = () -> new ArrayList<>(map.values());
         List<String> strings = sup.get();
-//        System.out.println(strings);
 
         Consumer<String> con = System.out::println;
         Function<String, String> func = String::toUpperCase;
